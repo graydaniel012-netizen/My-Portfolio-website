@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Gray - Web & App Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="menu-icon" id="menuIcon">
+      <i class='bx bx-menu'></i>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li class="menu-title">Daniel Gray</li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="section hero">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <h1>Hello, I'm <span class="highlight">Daniel Gray</span></h1>
+        <p class="bio">
+          I am a <strong>Web & App Developer</strong> who creates modern, responsive digital experiences.
+        </p>
+        <a href="#contact" class="btn btn-primary">Contact Me</a>
+      </div>
+
+      <div class="hero-image">
+        <img src="img.png" alt="Daniel Gray">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="card"><h3>Education</h3><p>Aptech Training Center</p></div>
+        <div class="card"><h3>Experience</h3><p>Freelance projects</p></div>
+        <div class="card"><h3>Skills</h3><p>HTML, CSS, JS, Flutter</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section services">
+    <h2 class="section-title">My Services</h2>
+    <div class="services-container">
+      <div class="service-box"><i class='bx bx-code-alt'></i><h3>Web Development</h3></div>
+      <div class="service-box"><i class='bx bx-mobile-alt'></i><h3>Mobile App</h3></div>
+      <div class="service-box"><i class='bx bx-palette'></i><h3>UI/UX Design</h3></div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="projects" class="section portfolio">
+    <div class="container">
+      <h2>My Projects</h2>
+
+      <div class="portfolio-grid">
+        <div class="project-card">
+          <img src="/Screenshot 2026-01-07 125731.png" alt="Hotel Website">
+          <div class="project-info">
+            <h3>Hotel Website</h3>
+            <p>Responsive hotel website design.</p>
+            <a href="#" class="btn">View Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="/image.png" alt="Landing Page">
+          <div class="project-info">
+            <h3>Landing Page</h3>
+            <p>Clean responsive landing page.</p>
+            <a href="#" class="btn">View Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="/image copy.png" alt="App UI">
+          <div class="project-info">
+            <h3>Flutter App UI</h3>
+            <p>Modern app layout.</p>
+            <a href="#" class="btn">View Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button class="contact-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <h2 class="logo">Daniel Gray</h2>
+      <p>Imagine • Build • Inspire</p>
+      <div class="social-links">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="#"><i class='bx bxl-whatsapp'></i></a>
+      </div>
+      <p class="copy">© Devlaunchagency.ng All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuIcon = document.getElementById('menuIcon');
+    const navLinks = document.getElementById('navLinks');
+    menuIcon.addEventListener('click', () => navLinks.classList.toggle('show'));
+  </script>
+
+</body>
+</html>
